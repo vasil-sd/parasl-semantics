@@ -209,7 +209,7 @@ module OUTER-TYPE-SYNTAX
 
   syntax OuterTypeFuncParams ::= List{OuterTypeFuncParam, ","}
   syntax OuterTypeFunc ::= "(" OuterTypeFuncParams ")" ":" OuterType
-                         > "(" OuterTypeFuncParams ")" [macro]
+                         > "(" OuterTypeFuncParams ")" [macro, klabel(OuterTypeFuncMacro)]
 
   rule ( (P:OuterTypeFuncParams) ):OuterTypeFunc =>
     ((P) : #bot):OuterTypeFunc
