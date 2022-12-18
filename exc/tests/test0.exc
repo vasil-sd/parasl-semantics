@@ -1,0 +1,10 @@
+int a = 1;
+int b = 3;
+int d = a - b + 1;
+
+if (a + b < 5) {
+    int c = a + b % 2;
+    b = b - c;
+} else {
+    b = a;
+}

@@ -1,0 +1,13 @@
+int a = 1;
+int b = 3;
+
+if (a + b < 5) {
+    if (a < 3) {
+        b = 1;
+    } else {
+        b = a - 1;
+    }
+    while (b > 0) {
+        b = b - 1;
+    }
+}

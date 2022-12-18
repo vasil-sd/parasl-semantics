@@ -1,0 +1,8 @@
+int a = 1;
+int b = 3;
+
+if (false) {
+    int c = b - a;
+}
+
+b = c - b;
